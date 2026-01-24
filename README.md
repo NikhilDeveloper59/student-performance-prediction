@@ -29,7 +29,7 @@ This system uses **Machine Learning** to analyze student study patterns and pred
 ✅ Pass or Fail Status (Binary Classification)  
 ✅ Final Grade — A / B / C / D (Multi-Class Classification)  
 
-It helps demonstrate how AI can assist in **education analytics** and **student performance monitoring**.
+It demonstrates how AI can support **education analytics** and **student performance monitoring**.
 
 ---
 
@@ -47,8 +47,9 @@ Assigns a **Grade (A/B/C/D)** using a **Random Forest Classifier**.
 ### 💾 Model Persistence
 All trained models are saved as `.pkl` files and reused without retraining.
 
-### 🖥️ Console Prediction System
-Users can input student details and get instant predictions.
+### 🖥️ Prediction Interfaces
+✔ Console-based prediction  
+✔ Streamlit Web App interface  
 
 ---
 
@@ -73,6 +74,7 @@ Users can input student details and get instant predictions.
 | NumPy | Numerical Operations |
 | Scikit-learn | ML Model Training |
 | Joblib | Model Saving & Loading |
+| Streamlit | Web App Interface |
 
 ---
 
@@ -81,10 +83,11 @@ Users can input student details and get instant predictions.
 ```bash
 Student_Performance_Prediction/
 │
-├── student_performance.py   # Dataset generation
-├── train_model.py           # Model training & saving
-├── prediction.py            # Console-based prediction system
-├── regression_model.pkl     # Saved regression model
-├── pass_fail_model.pkl      # Saved pass/fail model
-├── grade_model.pkl          # Saved grade model
-└── README.md                # Project documentation
+├── student_performance.py
+├── train_model.py
+├── prediction.py
+├── app.py                  # Streamlit Web App
+├── regression_model.pkl
+├── pass_fail_model.pkl
+├── grade_model.pkl
+└── README.md
