@@ -80,86 +80,21 @@ All trained models are saved as `.pkl` files and reused without retraining.
 
 ## 🗂️ Project Structure
 
+```bash
 Student_Performance_Prediction/
 │
-├── student_performance.py
-├── train_model.py
-├── prediction.py
-├── app.py                  # Streamlit Web App
-├── regression_model.pkl
-├── pass_fail_model.pkl
-├── grade_model.pkl
-└── README.md
+├── student_performance.py    # Dataset generation
+├── train_model.py            # Model training & saving
+├── prediction.py             # Console-based prediction system
+├── app.py                    # Streamlit Web App
+├── regression_model.pkl      # Saved regression model
+├── pass_fail_model.pkl       # Saved pass/fail model
+├── grade_model.pkl           # Saved grade model
+└── README.md                 # Project documentation
 
----
-
-<h2>⚙️ How to Run the Project</h2>
-
-<h3>1️⃣ Install Dependencies</h3>
-
-<pre>pip install pandas numpy scikit-learn joblib streamlit</pre>
-
-<h3>2️⃣ Train the Models</h3>
-
-<pre>python train_model.py</pre>
-
-<ul>
-  <li>✔ Generates dataset</li>
-  <li>✔ Trains all models</li>
-  <li>✔ Saves <code>.pkl</code> files</li>
-</ul>
-
-<h3>3️⃣ Run Console Prediction</h3>
-
-<pre>python prediction.py</pre>
-
-<h3>4️⃣ Run Web App (Recommended)</h3>
-
-<pre>streamlit run app.py</pre>
-
----
-
-<h2>📈 Example Output</h2>
-
-<pre>
-Final Score (Predicted): 90.77
-Result: PASS
-Grade: A
-</pre>
-
----
-
-<h2>🎯 Project Objective</h2>
-
-<p>This project demonstrates how <b>Machine Learning</b> can be applied in the education domain to:</p>
-
-<ul>
-  <li>📌 Identify at-risk students</li>
-  <li>📌 Predict academic performance</li>
-  <li>📌 Help educators make data-driven decisions</li>
-</ul>
-
----
-
-<h2>🏆 Future Improvements</h2>
-
-<ul>
-  <li>🚀 Add visualization dashboard</li>
-  <li>🌐 Deploy the web app online</li>
-  <li>🧾 Use real-world student datasets</li>
-  <li>📊 Add deep learning models</li>
-</ul>
-
----
-
-<h2>👨‍💻 Author</h2>
-
-<p><b>Nikhil Kumar</b><br>
-Machine Learning Enthusiast 🚀</p>
-
----
-
-<h3 align="center">⭐ If you like this project, give it a star on GitHub!</h3>
-
-```bash
-
+<h2>⚙️ How to Run the Project</h2> <h3>1️⃣ Install Dependencies</h3> <pre>pip install pandas numpy scikit-learn joblib streamlit</pre> <h3>2️⃣ Train the Models</h3> <pre>python train_model.py</pre> <ul> <li>✔ Generates dataset</li> <li>✔ Trains all models</li> <li>✔ Saves <code>.pkl</code> files</li> </ul> <h3>3️⃣ Run Console Prediction</h3> <pre>python prediction.py</pre> <h3>4️⃣ Run Web App (Recommended)</h3> <pre>streamlit run app.py</pre>
+<h2>📈 Example Output</h2> <pre> Final Score (Predicted): 90.77 Result: PASS Grade: A </pre>
+<h2>🎯 Project Objective</h2> <p>This project demonstrates how <b>Machine Learning</b> can be applied in the education domain to:</p> <ul> <li>📌 Identify at-risk students</li> <li>📌 Predict academic performance</li> <li>📌 Help educators make data-driven decisions</li> </ul>
+<h2>🏆 Future Improvements</h2> <ul> <li>🚀 Add visualization dashboard</li> <li>🌐 Deploy the web app online</li> <li>🧾 Use real-world student datasets</li> <li>📊 Add deep learning models</li> </ul>
+<h2>👨‍💻 Author</h2> <p><b>Nikhil Kumar</b><br> Machine Learning Enthusiast 🚀</p>
+<h3 align="center">⭐ If you like this project, give it a star on GitHub!</h3> ```
