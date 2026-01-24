@@ -13,7 +13,7 @@ def generate_dataset(rows=1000):
     }
 
     df = pd.DataFrame(data)
-
+    
     # Create Final Score (Regression Target)
     df["final_score"] = (
         df["study_hours"] * 5 +

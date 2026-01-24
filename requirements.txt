@@ -4,6 +4,7 @@ matplotlib
 seaborn
 scikit-learn
 joblib
+streamlit  --> for web app ( To run this: streamlit run app.py)
 
 # pip install -r requirements.txt
 pip install  requirements.txt
