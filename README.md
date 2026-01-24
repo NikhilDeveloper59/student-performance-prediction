@@ -157,4 +157,4 @@ Machine Learning Enthusiast 🚀</p>
 
 ---
 
-<h3 align="center">⭐ If you like this project, give it a star on GitHub!</h3>
+<h3 align="center">🌟 Like this project? Give it a ⭐ on GitHub and support the journey!</h3>
