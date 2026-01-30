@@ -2,54 +2,97 @@
   <img src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/512/external-student-back-to-school-flaticons-lineal-color-flat-icons.png" width="18%" alt="Student AI Banner"/>
 </p>
 
-<h1 align="center">🎓 Student Performance Prediction System</h1>
+<h1 align="center">🎓 AI-Based Student Performance Prediction and Early Warning System using ML</h1>
 
 <p align="center">
-  <b>An End-to-End Machine Learning Project for Predicting Student Outcomes 📊</b><br>
-  Predict <b>Final Score</b>, <b>Pass/Fail Result</b>, and <b>Grade</b> using AI models trained on academic & lifestyle data.
+  <b>An End-to-End Machine Learning Web Application for Predicting Student Academic Outcomes 📊</b><br>
+  Predict <b>Final Score</b>, <b>Pass/Fail Result</b>, <b>Grade</b>, and detect <b>Academic Risk Levels</b> using AI models trained on academic & lifestyle data.
 </p>
 
-<h3 align="center">🧩 Machine Learning Models Used</h3>
+<h3 align="center">🧠 Machine Learning Models Used</h3>
 <p align="center">
   <img src="https://img.shields.io/badge/Linear%20Regression-Score%20Prediction-blue?style=for-the-badge" />
   <img src="https://img.shields.io/badge/Logistic%20Regression-Pass%2FFail-green?style=for-the-badge" />
   <img src="https://img.shields.io/badge/Random%20Forest-Grade%20Prediction-orange?style=for-the-badge" />
   <img src="https://img.shields.io/badge/Scikit--Learn-ML%20Library-red?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Python-Programming-yellow?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Joblib-Model%20Saving-purple?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Streamlit-Web%20App-ff4b4b?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/SQLite-Database-lightgrey?style=for-the-badge" />
 </p>
 
 ---
 
 ## 📌 Project Overview
 
-This system uses **Machine Learning** to analyze student study patterns and predict:
+The **AI-Based Student Performance Prediction and Early Warning System** is an intelligent education analytics platform built using **Machine Learning + Streamlit**.
 
-✅ Final Exam Score (Regression)  
-✅ Pass or Fail Status (Binary Classification)  
-✅ Final Grade — A / B / C / D (Multi-Class Classification)  
+This system helps educators and institutions:
 
-It demonstrates how AI can support **education analytics** and **student performance monitoring**.
+✅ Predict **Final Exam Scores**  
+✅ Determine **Pass or Fail Status**  
+✅ Classify **Student Grades**  
+✅ Detect **Students at Academic Risk**  
+✅ Provide **AI-Based Improvement Suggestions**
+
+It acts as an **Early Warning System** to identify struggling students before final exams.
 
 ---
 
-## ✨ Features
+## ✨ Key Features
 
-### 📊 Score Prediction
-Predicts the **numerical final exam score** using **Linear Regression**.
+### 🎯 Student Performance Prediction
 
-### 🎯 Pass / Fail Detection
-Determines whether a student will **PASS or FAIL** using **Logistic Regression**.
+Predicts:
 
-### 🏆 Grade Classification
-Assigns a **Grade (A/B/C/D)** using a **Random Forest Classifier**.
+- 📈 Final Score (Regression Model)  
+- ✅ PASS / ❌ FAIL (Binary Classification)  
+- 🏆 Grade (A+, A, B, C, P, F)
 
-### 💾 Model Persistence
-All trained models are saved as `.pkl` files and reused without retraining.
+### 🧠 Academic Early Warning System
 
-### 🖥️ Prediction Interfaces
-✔ Console-based prediction  
-✔ Streamlit Web App interface  
+After prediction, the system analyzes student behavior and detects risk factors:
+
+| Risk Factor | Impact |
+|-------------|--------|
+| Low study hours | High academic risk |
+| Poor attendance | Performance decline |
+| Weak previous scores | Learning gaps |
+| Fewer assignments | Low engagement |
+| Insufficient sleep | Reduced concentration |
+
+Students are classified as:
+
+🚨 **High Risk**  
+⚠️ **Moderate Risk**  
+✅ **Low Risk**
+
+### 💡 AI-Based Suggestions
+
+The system automatically provides improvement tips like:
+
+- Increase daily study hours  
+- Improve class attendance  
+- Revise weak subjects  
+- Complete assignments regularly  
+- Maintain healthy sleep habits  
+
+### 📂 Bulk Student Prediction
+
+Upload a **CSV or Excel file** containing multiple student records to:
+
+✔ Predict performance for all students  
+✔ Store results in the database  
+✔ Download prediction report  
+
+### 📊 Analytics Dashboard
+
+The dashboard provides visual insights:
+
+📈 Grade Distribution  
+🥧 Pass vs Fail Ratio  
+📉 Predicted Score Distribution  
+⚠️ List of At-Risk Students  
+
+All prediction data is stored in an **SQLite database**.
 
 ---
 
@@ -65,96 +108,121 @@ All trained models are saved as `.pkl` files and reused without retraining.
 
 ---
 
-## 🧠 Tech Stack Used
+## 🧠 Machine Learning Models
+
+| Model | Purpose |
+|------|---------|
+| **Linear Regression** | Predict Final Score |
+| **Logistic Regression (with StandardScaler)** | Predict Pass/Fail |
+| **Random Forest Classifier** | Predict Student Grade |
+
+All models are trained using **Scikit-learn** and saved with **Joblib**.
+
+---
+
+## 🧰 Tech Stack Used
 
 | Technology | Purpose |
 |------------|---------|
 | Python 🐍 | Core Programming |
-| Pandas | Data Handling |
-| NumPy | Numerical Operations |
-| Scikit-learn | ML Model Training |
-| Joblib | Model Saving & Loading |
+| Pandas & NumPy | Data Processing |
+| Scikit-learn | Machine Learning |
+| Joblib | Model Saving |
 | Streamlit | Web App Interface |
+| Matplotlib | Data Visualization |
+| SQLite | Data Storage |
 
 ---
 
 ## 🗂️ Project Structure
 
 ```bash
-Student_Performance_Prediction/
+AI_Student_Performance_System/
 │
+├── app.py                    # Streamlit Web Application
+├── train_model.py            # Model training script
 ├── student_performance.py    # Dataset generation
-├── train_model.py            # Model training & saving
-├── prediction.py             # Console-based prediction system
-├── app.py                    # Streamlit Web App
-├── regression_model.pkl      # Saved regression model
-├── pass_fail_model.pkl       # Saved pass/fail model
-├── grade_model.pkl           # Saved grade model
+├── analytics.py              # Dashboard data loader
+├── database.py               # SQLite database operations
+├── prediction.py             # Console-based prediction
+│
+├── regression_model.pkl      # Saved regression model (generated)
+├── pass_fail_model.pkl       # Saved pass/fail model (generated)
+├── grade_model.pkl           # Saved grade model (generated)
+├── feature_columns.pkl       # Feature list (generated)
+│
+├── students.db               # SQLite database (auto-created)
 └── README.md                 # Project documentation
 ```
 
 ---
 
-<h2>⚙️ How to Run the Project</h2>
+## ⚙️ How to Run the Project
 
-<h3>1️⃣ Install Dependencies</h3>
-<pre>pip install pandas numpy scikit-learn joblib streamlit</pre>
+### 1️⃣ Install Dependencies
 
-<h3>2️⃣ Train the Models</h3>
-<pre>python train_model.py</pre>
+```bash
+pip install pandas numpy scikit-learn joblib streamlit matplotlib openpyxl
+```
 
-<ul>
-  <li>✔ Generates dataset</li>
-  <li>✔ Trains all models</li>
-  <li>✔ Saves <code>.pkl</code> files</li>
-</ul>
+### 2️⃣ Train the Machine Learning Models
 
-<h3>3️⃣ Run Console Prediction</h3>
-<pre>python prediction.py</pre>
+```bash
+python train_model.py
+```
 
-<h3>4️⃣ Run Web App (Recommended)</h3>
-<pre>streamlit run app.py</pre>
+✔ Generates dataset  
+✔ Trains ML models  
+✔ Saves `.pkl` model files  
+
+### 3️⃣ Run the Streamlit Web Application
+
+```bash
+streamlit run app.py
+```
+
+Your browser will open with the **Student Performance Prediction System** 🎉
 
 ---
 
-<h2>📈 Example Output</h2>
+## 📈 Example Prediction Output
 
-<pre>
-Final Score (Predicted): 90.77
+```
+Final Score (Predicted): 84.63
+Pass Probability: 88.4%
 Result: PASS
 Grade: A
-</pre>
+Risk Level: MODERATE
+```
 
 ---
 
-<h2>🎯 Project Objective</h2>
+## 🎯 Project Objective
 
-<p>This project demonstrates how <b>Machine Learning</b> can be applied in the education domain to:</p>
+This project shows how **Artificial Intelligence in Education** can:
 
-<ul>
-  <li>📌 Identify at-risk students</li>
-  <li>📌 Predict academic performance</li>
-  <li>📌 Help educators make data-driven decisions</li>
-</ul>
-
----
-
-<h2>🏆 Future Improvements</h2>
-
-<ul>
-  <li>🚀 Add visualization dashboard</li>
-  <li>🌐 Deploy the web app online</li>
-  <li>🧾 Use real-world student datasets</li>
-  <li>📊 Add deep learning models</li>
-</ul>
+📌 Identify academically at-risk students early  
+📌 Predict student outcomes before final exams  
+📌 Help teachers take preventive actions  
+📌 Enable data-driven academic decision-making  
 
 ---
 
-<h2>👨‍💻 Author</h2>
+## 🚀 Future Improvements
 
-<p><b>Nikhil Kumar</b><br>
-Machine Learning Enthusiast 🚀</p>
+- 🌍 Deploy the web app online  
+- 📊 Add advanced performance analytics  
+- 🧠 Train on real educational datasets  
+- 🤖 Integrate Deep Learning models  
+- 📧 Send alerts for high-risk students  
 
 ---
 
-<h3 align="center">🌟 Like this project? Give it a ⭐ on GitHub and support the journey!</h3>
+## 👨‍💻 Author
+
+**Nikhil Kumar**  
+AI & Machine Learning Enthusiast 🚀  
+
+---
+
+<h3 align="center">🌟 If you like this project, give it a ⭐ on GitHub and support the journey!</h3>
