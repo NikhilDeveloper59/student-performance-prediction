@@ -1,6 +1,3 @@
-<p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Segoe+UI&size=34&duration=4500&pause=1000&color=2E86C1&center=true&vCenter=true&repeat=false&width=1200&lines=AI-Based+Student+Performance+Prediction+and+Early+Warning+System+using+ML" />
-</p>
 
 <h1 align="center">AI-Based Student Performance Prediction and Early Warning System using ML</h1>
 
