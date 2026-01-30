@@ -25,18 +25,25 @@ def generate_dataset(rows=1000):
     ).clip(0, 100)
 
     # Pass / Fail (Binary Classification)
-    df["result"] = df["final_score"].apply(lambda x: 1 if x >= 40 else 0)
+    PASS_MARK = 30  # Standard pass limit
+    df["result"] = df["final_score"].apply(lambda x: 1 if x >= PASS_MARK else 0)
+
 
     # Grade (Multi-class Classification)
     def get_grade(score):
-        if score >= 80:
+        if score >= 90:
+            return "A+"
+        elif score >= 80:
             return "A"
         elif score >= 60:
             return "B"
         elif score >= 40:
             return "C"
+        elif score >= 30:
+            return "P"   # Pass class
         else:
-            return "D"
+            return "F"   # Fail
+
 
     df["grade"] = df["final_score"].apply(get_grade)
 

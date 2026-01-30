@@ -33,3 +33,17 @@ print("\n📊 STUDENT PERFORMANCE PREDICTION")
 print("Final Score (Predicted):", round(pred_score, 2))
 print("Result:", "PASS ✅" if pred_pass == 1 else "FAIL ❌")
 print("Grade:", pred_grade)
+
+print("\n🎗🎀Performance 🎀")
+
+if pred_score < 40:
+    print("⚠️ Student is at RISK of failing.")
+
+if study_hours < 3:
+    print("📘 Suggestion: Increase study hours.")
+
+if attendance < 70:
+    print("🏫 Suggestion: Improve attendance.")
+
+if sleep_hours < 5:
+    print("😴 Suggestion: Get proper sleep for better focus.")
