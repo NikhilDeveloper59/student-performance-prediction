@@ -1,8 +1,10 @@
 <p align="center">
-  <img src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/512/external-student-back-to-school-flaticons-lineal-color-flat-icons.png" width="18%" alt="Student AI Banner"/>
+  <img src="https://readme-typing-svg.demolab.com?font=Segoe+UI&size=32&duration=4000&pause=1000&color=2E86C1&center=true&vCenter=true&width=1000&lines=AI-Based+Student+Performance+Prediction+and+Early+Warning+System+using+ML" alt="Typing Title" />
 </p>
 
-<h1 align="center">🎓 AI-Based Student Performance Prediction and Early Warning System using ML</h1>
+<p align="center">
+  <img src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/512/external-student-back-to-school-flaticons-lineal-color-flat-icons.png" width="18%" alt="Student AI Banner"/>
+</p>
 
 <p align="center">
   <b>An End-to-End Machine Learning Web Application for Predicting Student Academic Outcomes 📊</b><br>
@@ -41,15 +43,11 @@ It acts as an **Early Warning System** to identify struggling students before fi
 
 ### 🎯 Student Performance Prediction
 
-Predicts:
-
-- 📈 Final Score (Regression Model)  
-- ✅ PASS / ❌ FAIL (Binary Classification)  
-- 🏆 Grade (A+, A, B, C, P, F)
+- 📈 Final Score Prediction  
+- ✅ PASS / ❌ FAIL Detection  
+- 🏆 Grade Classification (A+, A, B, C, P, F)
 
 ### 🧠 Academic Early Warning System
-
-After prediction, the system analyzes student behavior and detects risk factors:
 
 | Risk Factor | Impact |
 |-------------|--------|
@@ -59,7 +57,7 @@ After prediction, the system analyzes student behavior and detects risk factors:
 | Fewer assignments | Low engagement |
 | Insufficient sleep | Reduced concentration |
 
-Students are classified as:
+Students are categorized into:
 
 🚨 **High Risk**  
 ⚠️ **Moderate Risk**  
@@ -67,32 +65,32 @@ Students are classified as:
 
 ### 💡 AI-Based Suggestions
 
-The system automatically provides improvement tips like:
+The system provides personalized tips like:
 
 - Increase daily study hours  
-- Improve class attendance  
+- Improve attendance  
 - Revise weak subjects  
-- Complete assignments regularly  
+- Complete assignments on time  
 - Maintain healthy sleep habits  
 
 ### 📂 Bulk Student Prediction
 
-Upload a **CSV or Excel file** containing multiple student records to:
+Upload a **CSV or Excel file** to:
 
-✔ Predict performance for all students  
-✔ Store results in the database  
+✔ Predict performance for multiple students  
+✔ Store results in database  
 ✔ Download prediction report  
 
 ### 📊 Analytics Dashboard
 
-The dashboard provides visual insights:
+Visual insights include:
 
 📈 Grade Distribution  
 🥧 Pass vs Fail Ratio  
-📉 Predicted Score Distribution  
-⚠️ List of At-Risk Students  
+📉 Score Distribution  
+⚠️ At-Risk Students List  
 
-All prediction data is stored in an **SQLite database**.
+All data is stored in **SQLite**.
 
 ---
 
@@ -103,7 +101,7 @@ All prediction data is stored in an **SQLite database**.
 | 📚 Study Hours | Hours studied per day |
 | 🏫 Attendance | Attendance percentage |
 | 📝 Previous Score | Previous exam marks |
-| 📂 Assignments | Number of assignments completed |
+| 📂 Assignments | Assignments completed |
 | 😴 Sleep Hours | Average sleep per day |
 
 ---
@@ -112,11 +110,11 @@ All prediction data is stored in an **SQLite database**.
 
 | Model | Purpose |
 |------|---------|
-| **Linear Regression** | Predict Final Score |
-| **Logistic Regression (with StandardScaler)** | Predict Pass/Fail |
-| **Random Forest Classifier** | Predict Student Grade |
+| **Linear Regression** | Final Score Prediction |
+| **Logistic Regression + StandardScaler** | Pass/Fail Prediction |
+| **Random Forest Classifier** | Grade Classification |
 
-All models are trained using **Scikit-learn** and saved with **Joblib**.
+Models are trained using **Scikit-learn** and saved using **Joblib**.
 
 ---
 
@@ -129,8 +127,8 @@ All models are trained using **Scikit-learn** and saved with **Joblib**.
 | Scikit-learn | Machine Learning |
 | Joblib | Model Saving |
 | Streamlit | Web App Interface |
-| Matplotlib | Data Visualization |
-| SQLite | Data Storage |
+| Matplotlib | Visualization |
+| SQLite | Database |
 
 ---
 
@@ -139,20 +137,20 @@ All models are trained using **Scikit-learn** and saved with **Joblib**.
 ```bash
 AI_Student_Performance_System/
 │
-├── app.py                    # Streamlit Web Application
-├── train_model.py            # Model training script
-├── student_performance.py    # Dataset generation
-├── analytics.py              # Dashboard data loader
-├── database.py               # SQLite database operations
-├── prediction.py             # Console-based prediction
+├── app.py
+├── train_model.py
+├── student_performance.py
+├── analytics.py
+├── database.py
+├── prediction.py
 │
-├── regression_model.pkl      # Saved regression model (generated)
-├── pass_fail_model.pkl       # Saved pass/fail model (generated)
-├── grade_model.pkl           # Saved grade model (generated)
-├── feature_columns.pkl       # Feature list (generated)
+├── regression_model.pkl
+├── pass_fail_model.pkl
+├── grade_model.pkl
+├── feature_columns.pkl
 │
-├── students.db               # SQLite database (auto-created)
-└── README.md                 # Project documentation
+├── students.db
+└── README.md
 ```
 
 ---
@@ -165,27 +163,21 @@ AI_Student_Performance_System/
 pip install pandas numpy scikit-learn joblib streamlit matplotlib openpyxl
 ```
 
-### 2️⃣ Train the Machine Learning Models
+### 2️⃣ Train the Models
 
 ```bash
 python train_model.py
 ```
 
-✔ Generates dataset  
-✔ Trains ML models  
-✔ Saves `.pkl` model files  
-
-### 3️⃣ Run the Streamlit Web Application
+### 3️⃣ Run the Web App
 
 ```bash
 streamlit run app.py
 ```
 
-Your browser will open with the **Student Performance Prediction System** 🎉
-
 ---
 
-## 📈 Example Prediction Output
+## 📈 Example Output
 
 ```
 Final Score (Predicted): 84.63
@@ -199,22 +191,21 @@ Risk Level: MODERATE
 
 ## 🎯 Project Objective
 
-This project shows how **Artificial Intelligence in Education** can:
+This project demonstrates how **AI in Education** can:
 
-📌 Identify academically at-risk students early  
-📌 Predict student outcomes before final exams  
-📌 Help teachers take preventive actions  
-📌 Enable data-driven academic decision-making  
+📌 Identify at-risk students early  
+📌 Predict academic outcomes  
+📌 Support data-driven teaching decisions  
 
 ---
 
 ## 🚀 Future Improvements
 
-- 🌍 Deploy the web app online  
-- 📊 Add advanced performance analytics  
-- 🧠 Train on real educational datasets  
-- 🤖 Integrate Deep Learning models  
-- 📧 Send alerts for high-risk students  
+- Deploy the app online  
+- Add advanced analytics  
+- Use real-world datasets  
+- Add Deep Learning models  
+- Automated alerts for high-risk students  
 
 ---
 
@@ -225,4 +216,4 @@ AI & Machine Learning Enthusiast 🚀
 
 ---
 
-<h3 align="center">🌟 If you like this project, give it a ⭐ on GitHub and support the journey!</h3>
+<h3 align="center">🌟 If you like this project, give it a ⭐ on GitHub!</h3>
