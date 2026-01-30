@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Segoe+UI&size=32&duration=4000&pause=1000&color=2E86C1&center=true&vCenter=true&width=1000&lines=AI-Based+Student+Performance+Prediction+and+Early+Warning+System+using+ML" alt="Typing Title" />
+  <img src="https://readme-typing-svg.demolab.com?font=Segoe+UI&size=32&duration=4000&pause=1000&color=2E86C1&center=true&vCenter=true&width=1000&lines=AI+Based+Student+Performance+Prediction+and+Early+Warning+System+using++Machine+Learning" alt="Typing Title" />
 </p>
 
 <p align="center">
