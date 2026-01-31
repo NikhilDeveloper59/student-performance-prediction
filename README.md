@@ -136,20 +136,20 @@ Models are trained using **Scikit-learn** and saved using **Joblib**.
 ```bash
 AI_Student_Performance_System/
 │
-├── app.py
-├── train_model.py
-├── student_performance.py
-├── analytics.py
-├── database.py
-├── prediction.py
+├── app.py                    # Streamlit Web Application
+├── train_model.py            # Model training script
+├── student_performance.py    # Dataset generation
+├── analytics.py              # Dashboard data loader
+├── database.py               # SQLite database operations
+├── prediction.py             # Console-based prediction
 │
-├── regression_model.pkl
-├── pass_fail_model.pkl
-├── grade_model.pkl
-├── feature_columns.pkl
+├── regression_model.pkl      # Saved regression model (generated)
+├── pass_fail_model.pkl       # Saved pass/fail model (generated)
+├── grade_model.pkl           # Saved grade model (generated)
+├── feature_columns.pkl       # Feature list (generated)
 │
-├── students.db
-└── README.md
+├── students.db               # SQLite database (auto-created)
+└── README.md                 # Project documentation
 ```
 
 ---
